@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="pooa20171.iff.br.imc.MainActivity">
+
+    <EditText
+        android:layout_width="108dp"
+        android:layout_height="34dp"
+        android:id="@+id/txtN1"
+        tools:layout_editor_absoluteY="50dp"
+        tools:layout_editor_absoluteX="113dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:inputType="numberDecimal"
+        android:text="Informe a altura:"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="-1dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="monospace"
+        android:text="Escolha o sexo:"
+        android:textAlignment="center"
+        android:textAppearance="@style/Theme.AppCompat.DayNight.DialogWhenLarge"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.192" />
+
+    <Button
+        android:id="@+id/buttonM"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Masculino"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="159dp" />
+
+    <Button
+        android:id="@+id/buttonF"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Feminino"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="206dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-126dp"
+        tools:layout_editor_absoluteY="0dp"
+        app:layout_constraintGuide_end="471dp" />
+
+    <TextView
+        android:id="@+id/txvResultado"
+        android:layout_width="143dp"
+        android:layout_height="41dp"
+        android:text="IMC = "
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="262dp" />
+
+</LinearLayout>
